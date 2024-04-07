@@ -1,4 +1,4 @@
-import { View } from 'react-native';
+
 import { Gesture , GestureDetector} from 'react-native-gesture-handler';
 
 import Animated, {useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated';
@@ -41,14 +41,14 @@ export default function EmojiSticker( {imageSize, stickerSource}) {
 
     return (
         <GestureDetector gesture={drag}>
-            <View style = {{top: -350}}>
+            <Animated.View style = {[contentContainerStyle, {top: -350}]}>
                 <GestureDetector gesture={doubleTap}>
                     <Animated.Image 
                         source={stickerSource}
                         resizeMode='contain'
                         style={[imageStyle, {width: imageSize, height: imageSize}]} />
                 </GestureDetector>
-            </View>
+            </Animated.View>
         </GestureDetector>
     );
 }
