@@ -13,9 +13,13 @@
     "@expo/vector-icons": "^14.0.0",
     "dom-to-image": "^2.6.0",
     "expo": "~50.0.14",
+    "expo-gl": "^13.6.0",
     "expo-image-picker": "~14.7.1",
     "expo-media-library": "~15.9.1",
+    "expo-moquette": "^0.1.0-alpha.7",
+    "expo-serialport": "^0.2.2",
     "expo-status-bar": "~1.11.1",
+    "expo-three": "^7.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.73.6",
@@ -24,7 +28,9 @@
     "react-native-root-toast": "^3.5.1",
     "react-native-svg": "14.1.0",
     "react-native-view-shot": "3.8.0",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "react-native-webassembly": "^0.3.3",
+    "three": "^0.163.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
